@@ -25,8 +25,39 @@ The Hackathon Team Formation and Ranking system is designed to analyse student s
 
 ## 3. Python Source Code
 
-```
-# Hackathon Team Formation and Rankingteams = []min_size = 2max_size = 4n = int(input("Enter number of teams: "))for i in range(n):    print("\nEnter details for Team", i + 1)    name = input("Enter team name: ")    members = int(input("Enter number of team members: "))    if members < min_size or members > max_size:        print("Invalid team size! Team must have 2 to 4 members.")        continue    rounds = int(input("Enter number of rounds: "))    scores = []    for j in range(rounds):        score = int(input(f"Enter Round {j + 1} score: "))        scores.append(score)    total = sum(scores)    final_score = scores[-1] if scores else 0    teams.append({        "name": name,        "members": members,        "scores": scores,        "total": total,
+```mermaid
+
+flowchart TD
+    A([Start]) --> B[/Enter number of teams/]
+    B --> C[Initialize teams list]
+    C --> D[Enter team name]
+    D --> E[/Enter number of team members/]
+    E --> F{Members between 2 and 4?}
+
+    F -- No --> G[Display Invalid Team Size]
+    G --> D
+
+    F -- Yes --> H[/Enter number of rounds/]
+    H --> I[Initialize scores list]
+    I --> J[/Enter round score/]
+    J --> K[Add score to scores list]
+    K --> L{More rounds?}
+    L -- Yes --> J
+    L -- No --> M[Calculate total score]
+    M --> N[Calculate final score]
+    N --> O[Store team details]
+
+    O --> P{More teams?}
+    P -- Yes --> D
+    P -- No --> Q[Sort teams by ranking]
+
+    Q --> R[Compare final scores]
+    R --> S{Final scores equal?}
+    S -- Yes --> T[Compare team names alphabetically]
+    S -- No --> U[Arrange by score]
+    T --> V[Display team details and rankings]
+    U --> V
+    V --> W([Stop])
 ```
 
 ## 4. Sample Input
