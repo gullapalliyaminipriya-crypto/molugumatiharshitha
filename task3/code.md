@@ -17,7 +17,7 @@ Develop a Python program to calculate an employee's salary based on basic pay, a
 6. Display the formatted salary statement.
 7. Stop the program.
 
-## 3. Python Source Code
+## 3. flowchart (mermaid TD)
 ```mermaid
 flowchart TD
     A([START]) --> B[/Enter Employee Name/]
