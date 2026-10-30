@@ -105,5 +105,25 @@ Score Difference: 0
 | `sum()`        | Calculate totals (alternative method) |
 
 Expected Result: Students are divided into groups with balanced total scores. The objective is to minimize the difference between the highest and lowest group totals.
-
-Note: This program uses a greedy allocation method. It balances group totals using the current lowest-total group, but it does not guarantee the mathematically optimal grouping for every input.
+## 7. flowchart (mermaid TD)
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Enter number of students/]
+    B --> C[/Enter student names and scores/]
+    C --> D[/Enter group size/]
+    D --> E{Is group size valid?}
+    E -- No --> F[/Display Invalid Group Size/]
+    F --> Z([Stop])
+    E -- Yes --> G[Sort students by score in descending order]
+    G --> H[Create empty groups and totals]
+    H --> I[Select next student]
+    I --> J[Find group with minimum total score]
+    J --> K[Allocate student to that group]
+    K --> L[Update group total]
+    L --> M{Are all students allocated?}
+    M -- No --> I
+    M -- Yes --> N[Calculate group score differences]
+    N --> O[/Display groups and total scores/]
+    O --> P[/Display score difference/]
+    P --> Z([Stop])
+```
