@@ -30,7 +30,7 @@ Develop a Python program to generate a retail bill for multiple products purchas
 11. Stop the program.
 
 ## 3. Flowchart
-```meramid
+
 
 ```mermaid
 flowchart TD
