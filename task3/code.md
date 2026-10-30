@@ -18,9 +18,7 @@ Develop a Python program to calculate an employee's salary based on basic pay, a
 7. Stop the program.
 
 ## 3. Python Source Code
-
-```meramid
-
+```mermaid
 flowchart TD
     A([START]) --> B[/Enter Employee Name/]
     B --> C[/Enter Basic Pay, Allowances, Overtime and Incentives/]
