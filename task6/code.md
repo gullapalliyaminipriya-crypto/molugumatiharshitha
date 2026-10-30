@@ -93,5 +93,23 @@ Violation Student IDs: ['S102', 'S103']
 | `append()`                 | Store violation details            |
 | Membership operator (`in`) | Check course availability          |
 | Tuple comparison           | Check invalid combinations         |
+## 7. flowchart (Mermaid TD)
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Enter number of students/]
+    B --> C[/Enter student ID and course registrations as tuples/]
+    C --> D[Initialize empty registration list]
+    D --> E[Store student registrations]
+    E --> F{Are all registrations entered?}
+    F -- No --> E
+    F -- Yes --> G[Check duplicate course registrations]
+    G --> H[Check invalid course combinations]
+    H --> I{Any rule violations?}
+    I -- Yes --> J[Mark student as having invalid registration]
+    I -- No --> K[Mark student as valid]
+    J --> L[Display duplicate and invalid registrations]
+    K --> L
+    L --> M[Display students violating rules]
+    M --> N([End])
+```
 
-Expected Result: The program identifies duplicate registrations, unavailable courses, and invalid course combinations. It displays valid students and students who have violated registration rules.
