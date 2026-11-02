@@ -107,6 +107,3 @@ Final Payable     : Rs. 48820.0
 ====================================
 ```
 
-## 7. Result
-
-Thus, the Python program successfully calculates the retail bill for multiple products by applying category-specific taxes, threshold-based discounts, and maximum concession limits. It generates an itemized invoice showing the final payable amount.
