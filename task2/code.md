@@ -52,11 +52,7 @@ flowchart TD
 
 
 
-## 4. Python Source Code
 
-```
-# Retail Billing with Multiple Discount Rulesn = int(input("Enter number of products: "))subtotal = 0total_tax = 0print("\nEnter Product Details")for i in range(n):    print("\nProduct", i + 1)    name = input("Enter product name: ")    category = input("Enter category: ").lower()    price = float(input("Enter unit price: "))    quantity = int(input("Enter quantity: "))    amount = price * quantity    # Category-specific tax    if category == "electronics":        tax_rate = 18    elif category == "clothing":        tax_rate = 5    elif category == "groceries":        tax_rate = 2    else:        tax_rate = 0    tax = amount * tax_rate / 100    subtotal += amount    total_tax += tax    print("\nProduct:", name)
-```
 
 ## 5. Sample Input
 
