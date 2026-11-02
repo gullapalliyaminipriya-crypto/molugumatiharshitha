@@ -26,11 +26,7 @@ Develop a Python program using nested lists to analyse the performance of player
 
 [PPT - QBASIC PowerPoint Presentation, free download - ID:6640494](https://images.openai.com/static-rsc-4/0tPzhi44G8jmOdhxzal8_7bzCuFv_IhS7moZhX8xBfUg4yY2sAUjH-7y0R0gK89gAjEfeQKSEeBZuRiy93h24FQlV0YZxQA48sCJUgodQkhFLKEt1Ey3VRBLyoo4etsDpifqtZQdkf2gwoIH3MBjOEUhKh28zB6woavTmc3hK5A?purpose=inline)
 
-## 4. Python Source Code
 
-```
-# Nested List Sports Performance Analysisn = int(input("Enter number of players: "))m = int(input("Enter number of matches: "))players = []scores = []# Input player details and scoresfor i in range(n):    name = input("\nEnter player name: ")    players.append(name)    match_scores = []    print("Enter scores for", name)    for j in range(m):        score = int(input("Match " + str(j + 1) + ": "))        match_scores.append(score)    scores.append(match_scores)# Analyse player performanceresults = []for i in range(n):    total = sum(scores[i])    average = total / m    highest = max(scores[i])    lowest = min(scores[i])    consistency = highest - lowest    # Identify performance trend
-```
 
 ## 5. Sample Input
 
