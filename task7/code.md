@@ -83,8 +83,3 @@ Total Fine: Rs. 35
 ====================================
 ```
 
-## 7. Result
-
-The Library Borrowing and Fine Reconciliation program successfully analyses book records using tuples, calculates overdue fines, identifies overdue books, checks book availability, and displays the total fine amount.
-
-Concepts used: Tuples, Lists, Loops, Conditional Statements, Arithmetic Operations, and Variables.
