@@ -72,6 +72,3 @@ Arun     240    60.0        0        Stable
 Analysis Completed!
 ```
 
-## 7. Result
-
-Thus, the Python program successfully analyses players' sports performance using nested lists, calculates total scores, averages and consistency, identifies performance trends, and ranks players according to the given tiebreaking rules.
