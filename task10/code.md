@@ -87,6 +87,4 @@ Remaining Buses: 0
 Total Unserved Passengers: 45
 ```
 
-## 7. Result
 
-The program successfully calculates the buses required for each campus route, allocates the available buses, calculates passengers served, and identifies unserved passengers.
