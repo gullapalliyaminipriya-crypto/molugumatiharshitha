@@ -56,11 +56,9 @@ flowchart TD
     S --> D
     D -- No --> T([Stop])
 ```
-## 4. Python Source Code
 
-```
-# Smart Electricity Billing for Multiple Apartmentsn = int(input("Enter number of apartments: "))apartments = []for i in range(n):    print("\nApartment", i + 1)    apt_no = input("Enter apartment number: ")    previous = int(input("Enter previous meter reading: "))    current = int(input("Enter current meter reading: "))    recorded_bill = float(input("Enter recorded bill amount: "))    # Validate meter readings    if current < previous:        print("Invalid meter readings!")        continue    units = current - previous    # Progressive tariff calculation    if units <= 100:        energy_charge = units * 2    elif units <= 200:        energy_charge = (100 * 2) + (units - 100) * 3    else:        energy_charge = (100 * 2) + (100 * 3) + (units - 200) * 5    # Fixed charge    fixed_charge = 50    subtotal = energy_charge + fixed_charge
-```
+
+
 
 ## 5. Sample Input
 
