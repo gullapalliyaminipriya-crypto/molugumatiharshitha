@@ -141,4 +141,3 @@ Total Apartments Processed: 3
 6. Functions – Use built-in `sorted()` and `round()`.
 7. Sorting – Rank apartments based on electricity consumption.
 
-Conclusion: This program calculates electricity bills for multiple apartments, applies rebates and fixed charges, detects billing discrepancies, and ranks apartments based on their electricity consumption.
