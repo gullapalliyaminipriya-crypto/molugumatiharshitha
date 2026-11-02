@@ -143,4 +143,4 @@ Tie-breaking rules:
 2. If total scores are equal, highest final-round score gets preference.
 3. If both scores are equal, alphabetical team name decides the order.
 
-Note: Invalid teams are excluded from the ranking. The program uses 2–4 members as the permitted team size.
+
