@@ -50,11 +50,7 @@ flowchart TD
     M --> N
     N --> E
 ```
-## 4. Python Source Code
 
-```
-# Library Borrowing and Fine Reconciliation# Tuple format:# (Book ID, Borrowing Days, Return Status)books = [    ("B101", 18, True),    ("B102", 10, True),    ("B103", 20, False),    ("B104", 14, True),    ("B105", 17, True)]BORROWING_LIMIT = 14FINE_PER_DAY = 5total_fine = 0overdue_count = 0available_count = 0unavailable_count = 0print("========== LIBRARY REPORT ==========")print("Book ID  Days  Overdue  Fine  Status")print("------------------------------------")for book in books:    book_id, days, returned = book    if returned:        overdue_days = max(0, days - BORROWING_LIMIT)        fine = overdue_days * FINE_PER_DAY        status = "Available"        available_count += 1
-```
 
 ## 5. Sample Input
 
