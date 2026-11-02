@@ -95,6 +95,3 @@ Disqualification Status: YES
 Warning: Driver meets disqualification conditions.
 ```
 
-## 7. Result
-
-The Python program successfully calculates traffic violation penalties for multiple offences, applies additional fines for repeat offences, calculates the total penalty, and identifies disqualification conditions using conditional statements, loops, and dictionaries.
