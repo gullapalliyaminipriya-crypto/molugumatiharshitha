@@ -48,11 +48,7 @@ flowchart TD
     M --> N([Stop])
 ```
 
-## 4. Python Source Code
 
-```
-# Multi-Criteria Library Resource Distributionbook_name = input("Enter book name: ")total_copies = int(input("Enter total available copies: "))n = int(input("Enter number of library branches: "))branches = []for i in range(n):    print("\nEnter details for Branch", i + 1)    name = input("Enter branch name: ")    demand = int(input("Enter book demand: "))    priority = int(input("Enter priority (1-3): "))    branches.append((name, demand, priority))# Sort branches by priority# Priority 1 is highest prioritybranches.sort(key=lambda x: x[2])available = total_copiestotal_allocated = 0total_unmet = 0print("\n========== LIBRARY DISTRIBUTION REPORT ==========")print("Book Name:", book_name)print("Total Available Copies:", total_copies)print("\nBranch\t\tDemand\tPriority\tAllocated\tUnmet")for name, demand, priority in branches:    allocated = min(demand, available)
-```
 
 ## 5. Sample Input
 
