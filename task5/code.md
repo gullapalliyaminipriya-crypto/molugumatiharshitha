@@ -104,7 +104,7 @@ Score Difference: 0
 | `max()`        | Find the highest group total          |
 | `sum()`        | Calculate totals (alternative method) |
 
-Expected Result: Students are divided into groups with balanced total scores. The objective is to minimize the difference between the highest and lowest group totals.
+
 ## 7. flowchart (mermaid TD)
 ```mermaid
 flowchart TD
