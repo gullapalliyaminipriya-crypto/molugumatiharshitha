@@ -53,11 +53,7 @@ flowchart TD
     D --> F([Stop])
     E --> F
 ```
-## 4. Python Source Code
 
-```
-    violation_count += 1    fine = fine_rules[offence]    if repeat == "yes":        fine = fine + (fine * 0.50)    total_fine += fine    print("Penalty for this violation: Rs.", fine)    if offence == "drunk driving":        disqualified = True# Check final disqualification conditionsif violation_count >= 3:    disqualified = Trueprint("\n------ FINAL PENALTY REPORT ------")print("Total valid violations:", violation_count)print("Total penalty: Rs.", total_fine)if disqualified:    print("Disqualification Status: YES")    print("Warning: Driver meets disqualification conditions.")else:    print("Disqualification Status: NO")    print("Driver does not meet disqualification conditions.")
-```
 
 ## 5. Sample Input
 
