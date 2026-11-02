@@ -112,4 +112,4 @@ Distribution Completed.
 | `min()`              | Allocate available copies     |
 | Arithmetic operators | Calculate unmet demand        |
 
-Conclusion: This program distributes available library books among different branches according to their priority levels. It calculates allocated copies, remaining stock, and unmet demand, helping libraries manage resources efficiently.
+
